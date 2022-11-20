@@ -1,0 +1,76 @@
+## Wbds_LA pre-camp ##
+#Leticia Lima
+#Clonar a pasta do git com o desafio
+
+git clone https://github.com/WomenBioinfoDataScLA/projeto_final_pre-camp_wbds_la-leticiaflima.git
+#Extrair o conteúdo da pasta
+ 
+unzip projeto_final_pre-camp_wbds_la-leticiaflima-main.zip
+
+#Entrar no diretório
+cd projeto_final_pre-camp_wbds_la-leticiaflima-main
+ls
+#Rodar o bash com as instruções de inicio
+./welcome.sh
+
+#Desafio_Parte1 
+cd passo_2
+ls
+cat instrucoes.txt
+
+#Desafio_Parte2 
+cd ../passo_5/
+ls
+
+#ler somente as duas primeiras linhas do texto
+head -n2 instrucoes.txt
+
+#Desafio_Parte3
+cd ../passo_10/
+ls
+cat instrucoes.txt
+
+#Baixar o arquivo pedido 
+wget https://www.gnu.org/licenses/gpl-3.0.txt
+wget --no-check-certificate https://www.gnu.org/licenses/gpl-3.0.txt
+ls
+
+#Contar a ocorrencia da palavra "freedom"
+grep -c "freedom" gpl-3.0.txt
+
+##OBS-Usei exatamente o termo pedido "freedom", mas poderia buscar pela palavra sem fazer distincao de maiuscula. Nesse caso, iria logo para a última pasta
+##Possibilidade - $grep -i -c  "freedom" gpl-3.0.txt
+#Desafio_Parte4 
+cd ../passo_8/
+ls
+cat instrucoes.txt
+#Baixar o arquivo pedido
+wget https://www.rcsb.org/fasta/entry/7PND
+ls
+cat 7PND
+grep -o "K" seq7PND.txt | wc -l
+
+#Desafio_Parte5
+cd ../passo_24/
+ls
+cat instrucoes.txt
+wget https://www.alphafold.ebi.ac.uk/entry/F4HVG8
+
+#Ver o tamanho do arquivo
+ls -lh
+
+#Desafio_Parte6
+cd ../passo_7/
+ls
+cat instrucoes.txt
+cat sequences.fasta sequences_II.fasta > sequence_total.fasta
+grep -c  "Homo sapiens" sequence_total.fasta
+
+#Desafio_Parte7
+cd ../passo_9
+ls
+cat instrucoes.txt
+cat *.md > frase_final.txt
+ls
+cat frase_final.txt
+
